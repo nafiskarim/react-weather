@@ -26615,7 +26615,7 @@
 
 	    // using axiom node module
 	    return axios.get(reqUrl).then(function (res) {
-	      debugger;
+	      //debugger;
 	      //error check
 	      if (res.data.cod && res.data.message) {
 	        throw new Error(res.data.message);
