@@ -26614,9 +26614,9 @@
 	      'div',
 	      null,
 	      React.createElement(
-	        'h3',
-	        null,
-	        'weather component'
+	        'h1',
+	        { className: 'text-center' },
+	        'Get Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      ' ',
@@ -26660,7 +26660,7 @@
 	        React.createElement('input', { type: 'text', ref: 'location', placeholder: 'Enter city name' }),
 	        React.createElement(
 	          'button',
-	          null,
+	          { className: 'hollow expanded button' },
 	          'Get Weather'
 	        )
 	      )
@@ -26675,7 +26675,7 @@
 /* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -26695,15 +26695,16 @@
 	      location = props.location; // getting state data through props
 
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
 	    React.createElement(
-	      'p',
-	      null,
-	      'Location: ',
+	      "h3",
+	      { className: "text-center" },
+	      "Temperature in ",
 	      location,
-	      ' , Temp: ',
-	      temp
+	      ": ",
+	      temp,
+	      " degree celcius"
 	    )
 	  );
 	};

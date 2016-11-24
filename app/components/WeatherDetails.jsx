@@ -15,7 +15,7 @@ var WeatherDetails = (props) => {
   var {temp, location} = props; // getting state data through props
   return (
     <div>
-      <p>Location: {location} , Temp: {temp}</p>
+      <h3 className="text-center">Temperature in {location}: {temp} degree celcius</h3>
     </div>
   );
 };

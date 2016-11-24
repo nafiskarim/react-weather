@@ -41,7 +41,7 @@ var Weather = React.createClass({
 
     return (
       <div>
-        <h3>weather component</h3>
+        <h1 className="text-center">Get Weather</h1>
         <WeatherForm onSearch={this.handleSearch}/> {/* onSearch is a prop here passed from child compo */}
          {renderMsg()} {/*creating props to pass data to child */}
       </div>
