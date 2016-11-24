@@ -38,6 +38,7 @@ var Weather = React.createClass({
         return <WeatherDetails temp={temp} location={location}/>;
       }
     }
+
     return (
       <div>
         <h3>weather component</h3>

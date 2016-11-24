@@ -26451,11 +26451,14 @@
 	    null,
 	    React.createElement(Nav, null),
 	    React.createElement(
-	      'h2',
-	      null,
-	      'main component'
-	    ),
-	    props.children
+	      'div',
+	      { className: 'row' },
+	      React.createElement(
+	        'div',
+	        { className: 'small-12 medium-6 large-4 columns small-centered' },
+	        props.children
+	      )
+	    )
 	  );
 	};
 
@@ -26606,6 +26609,7 @@
 	        return React.createElement(WeatherDetails, { temp: temp, location: location });
 	      }
 	    }
+
 	    return React.createElement(
 	      'div',
 	      null,
@@ -28254,6 +28258,9 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(185),
+	    Link = _require.Link;
+
 	// var Examples = React.createClass({
 	//   render: function() {
 	//     return (
@@ -28261,11 +28268,44 @@
 	//     );
 	//   }
 	// });
-	var Examples = function Examples() {
+
+
+	var Examples = function Examples(props) {
 	  return React.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'Examples'
+	    React.createElement(
+	      'h3',
+	      { className: 'text-center' },
+	      'Examples'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Here are some few example locations'
+	    ),
+	    React.createElement(
+	      'ol',
+	      null,
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Dhaka' },
+	          'Dhaka'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Stockholm' },
+	          'Stockholm'
+	        )
+	      )
+	    )
 	  );
 	};
 
