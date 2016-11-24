@@ -23,7 +23,7 @@ var Nav = React.createClass({
             </li>
           </ul>
         </div>
-        <div className="top-bar-rigth">
+        <div className="top-bar-right">
           <form onSubmit={this.onSearch}>
             <ul className="menu">
               <li>
