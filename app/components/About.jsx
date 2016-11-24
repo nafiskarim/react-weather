@@ -12,7 +12,7 @@ var React = require('react');
 var About = (props) => {
   return (
     <div className="text-center">
-      <h1>About</h1>
+      <h1 className="page-title">About</h1>
       <p>some text about this weather app</p>
     </div>
   )
