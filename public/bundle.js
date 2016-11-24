@@ -26455,7 +26455,7 @@
 	      { className: 'row' },
 	      React.createElement(
 	        'div',
-	        { className: 'small-12 medium-6 large-4 columns small-centered' },
+	        { className: 'columns medium-6 large-4 small-centered' },
 	        props.children
 	      )
 	    )
@@ -28227,7 +28227,7 @@
 /* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -28242,9 +28242,18 @@
 	// stateless functional component
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
-	    null,
-	    'About'
+	    "div",
+	    { className: "text-center" },
+	    React.createElement(
+	      "h1",
+	      null,
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "some text about this weather app"
+	    )
 	  );
 	};
 
@@ -28275,13 +28284,13 @@
 	    'div',
 	    null,
 	    React.createElement(
-	      'h3',
+	      'h1',
 	      { className: 'text-center' },
 	      'Examples'
 	    ),
 	    React.createElement(
 	      'p',
-	      null,
+	      { className: 'text-center' },
 	      'Here are some few example locations'
 	    ),
 	    React.createElement(
